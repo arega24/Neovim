@@ -19,7 +19,7 @@ require('packer').startup(function(use)
       'williamboman/mason-lspconfig.nvim',
 
       -- Useful status updates for LSP
-      'j-hui/fidget.nvim',
+      -- 'j-hui/fidget.nvim',
 
       -- Additional lua configuration, makes nvim stuff amazing
       'folke/neodev.nvim',
@@ -99,6 +99,8 @@ require('packer').startup(function(use)
     require('packer').sync()
   end
 end)
+
+
 
 -- When we are bootstrapping a configuration, it doesn't
 -- make sense to execute the rest of the init.lua.
@@ -367,7 +369,7 @@ mason_lspconfig.setup_handlers {
 }
 
 -- Turn on lsp status information
-require('fidget').setup()
+-- require('fidget').setup()
 
 -- nvim-cmp setup
 local cmp = require 'cmp'
